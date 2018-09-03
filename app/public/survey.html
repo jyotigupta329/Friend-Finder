@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Friend Finder</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="photo">Photo</label>
+                    <input type="text" id="photo" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="ques1">Your mind is always buzzing with unexplored ideas and plans.</label>
+                    <select id="ques1" class="form-control">
+                        <option selected>Choose...</option>
+                        <option value="1">1(Strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(Strongly agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="ques2">Generally speaking, you rely more on your experience than your imagination.</label>
+                    <select id="ques2" class="form-control">
+                        <option selected>Choose...</option>
+                        <option value="1">1(Strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(Strongly agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="ques3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                    <select id="ques3" class="form-control">
+                        <option selected>Choose...</option>
+                        <option value="1">1(Strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(Strongly agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="ques4">You rarely do something just out of sheer curiosity.
+                    </label>
+                    <select id="ques4" class="form-control">
+                        <option selected>Choose...</option>
+                        <option value="1">1(Strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(Strongly agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="ques5">People can rarely upset you.</label>
+                    <select id="ques5" class="form-control">
+                        <option selected>Choose...</option>
+                        <option value="1">1(Strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(Strongly agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="ques6">It is often difficult for you to relate to other people’s feelings.</label>
+                    <select id="ques6" class="form-control">
+                        <option selected>Choose...</option>
+                        <option value="1">1(Strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(Strongly agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="ques7">In a discussion, truth should be more important than people’s sensitivities.
+                    </label>
+                    <select id="ques7" class="form-control">
+                        <option selected>Choose...</option>
+                        <option value="1">1(Strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(Strongly agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="ques8">You rarely get carried away by fantasies and ideas.</label>
+                    <select id="ques8" class="form-control">
+                        <option selected>Choose...</option>
+                        <option value="1">1(Strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(Strongly agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="ques9">You think that everyone’s views should be respected regardless of whether they are supported by facts
+                        or not.</label>
+                    <select id="ques9" class="form-control">
+                        <option selected>Choose...</option>
+                        <option value="1">1(Strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(Strongly agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="ques10">You feel more energetic after spending time with a group of people.</label>
+                    <select id="ques10" class="form-control">
+                        <option selected>Choose...</option>
+                        <option value="1">1(Strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(Strongly agree)</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="submit" id="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                Launch demo modal
+            </button>
+        </form>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="matchImg" width="300px">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            // Question: What does this code do?
+            $("#submit").on("click", function (event) {
+                event.preventDefault();
+
+                var newFriend = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#ques1").val(),
+                        $("#ques2").val(),
+                        $("#ques3").val(),
+                        $("#ques4").val(),
+                        $("#ques5").val(),
+                        $("#ques6").val(),
+                        $("#ques7").val(),
+                        $("#ques8").val(),
+                        $("#ques9").val(),
+                        $("#ques10").val()
+                    ]
+                };
+
+
+                $.post("/api/friends", newFriend)
+                    .then(function (data) {
+                        console.log(data);
+                        $("#exampleModalLongTitle").text(data.name);
+                        console.log(data.photo);
+                        $("#matchImg").attr("src", data.photo);
+                        $("#exampleModalCenter").modal("toggle");
+                    });
+            });
+        </script>
+</body>
+
+</html>
