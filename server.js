@@ -3,6 +3,8 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
+var swaggerUi = require("swagger-ui-express");
+var swaggerDoc = require("./swagger.json");
 
 // Setting express 
 var app = express();
@@ -17,6 +19,7 @@ var htmlRoutes = require("./app/routing/htmlRoutes");
 var apiRoutes = require("./app/routing/apiRoutes");
 
 app.use(express.static("app/public"));
+app.use('/api/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 htmlRoutes(app, path);
 apiRoutes(app, path);
 

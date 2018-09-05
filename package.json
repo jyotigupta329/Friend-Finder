@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jyotigupta329/Friend-Finder#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "swagger-ui-express": "^4.0.1"
   }
 }

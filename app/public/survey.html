@@ -16,163 +16,182 @@
         crossorigin="anonymous"></script>
 
 </head>
+<style>
+    body {
+        background-image: url("https://images.unsplash.com/photo-1513183881046-a5fa074c681d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3afbad277f00db350438921cd11d0a57&auto=format&fit=crop&w=800&q=60");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        margin: 0;
+    }
+
+    .survey {
+        margin-left: 100px;
+        margin-top: 100px;
+        padding: 50px;
+        background: white;
+    }
+</style>
 
 <body>
 
     <div class="container">
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Name">
+        <div>
+            <form class="survey">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
                 </div>
 
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="photo">Photo</label>
-                    <input type="text" id="photo" class="form-control">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="photo">Photo</label>
+                        <input type="text" id="photo" class="form-control">
+                    </div>
                 </div>
-            </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="ques1">Your mind is always buzzing with unexplored ideas and plans.</label>
+                        <select id="ques1" class="form-control">
+                            <option selected>Choose...</option>
+                            <option value="1">1(Strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5(Strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="ques2">Generally speaking, you rely more on your experience than your imagination.</label>
+                        <select id="ques2" class="form-control">
+                            <option selected>Choose...</option>
+                            <option value="1">1(Strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5(Strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="ques3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                        <select id="ques3" class="form-control">
+                            <option selected>Choose...</option>
+                            <option value="1">1(Strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5(Strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="ques4">You rarely do something just out of sheer curiosity.
+                        </label>
+                        <select id="ques4" class="form-control">
+                            <option selected>Choose...</option>
+                            <option value="1">1(Strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5(Strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="ques5">People can rarely upset you.</label>
+                        <select id="ques5" class="form-control">
+                            <option selected>Choose...</option>
+                            <option value="1">1(Strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5(Strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="ques6">It is often difficult for you to relate to other people’s feelings.</label>
+                        <select id="ques6" class="form-control">
+                            <option selected>Choose...</option>
+                            <option value="1">1(Strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5(Strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="ques7">In a discussion, truth should be more important than people’s sensitivities.
+                        </label>
+                        <select id="ques7" class="form-control">
+                            <option selected>Choose...</option>
+                            <option value="1">1(Strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5(Strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="ques8">You rarely get carried away by fantasies and ideas.</label>
+                        <select id="ques8" class="form-control">
+                            <option selected>Choose...</option>
+                            <option value="1">1(Strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5(Strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="ques9">You think that everyone’s views should be respected regardless of whether they are supported by facts
+                            or not.</label>
+                        <select id="ques9" class="form-control">
+                            <option selected>Choose...</option>
+                            <option value="1">1(Strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5(Strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="ques10">You feel more energetic after spending time with a group of people.</label>
+                        <select id="ques10" class="form-control">
+                            <option selected>Choose...</option>
+                            <option value="1">1(Strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5(Strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="submit" id="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Submit
+                </button>
+            </form>
+        </div>
 
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="ques1">Your mind is always buzzing with unexplored ideas and plans.</label>
-                    <select id="ques1" class="form-control">
-                        <option selected>Choose...</option>
-                        <option value="1">1(Strongly disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly agree)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="ques2">Generally speaking, you rely more on your experience than your imagination.</label>
-                    <select id="ques2" class="form-control">
-                        <option selected>Choose...</option>
-                        <option value="1">1(Strongly disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly agree)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="ques3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
-                    <select id="ques3" class="form-control">
-                        <option selected>Choose...</option>
-                        <option value="1">1(Strongly disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly agree)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="ques4">You rarely do something just out of sheer curiosity.
-                    </label>
-                    <select id="ques4" class="form-control">
-                        <option selected>Choose...</option>
-                        <option value="1">1(Strongly disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly agree)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="ques5">People can rarely upset you.</label>
-                    <select id="ques5" class="form-control">
-                        <option selected>Choose...</option>
-                        <option value="1">1(Strongly disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly agree)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="ques6">It is often difficult for you to relate to other people’s feelings.</label>
-                    <select id="ques6" class="form-control">
-                        <option selected>Choose...</option>
-                        <option value="1">1(Strongly disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly agree)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="ques7">In a discussion, truth should be more important than people’s sensitivities.
-                    </label>
-                    <select id="ques7" class="form-control">
-                        <option selected>Choose...</option>
-                        <option value="1">1(Strongly disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly agree)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="ques8">You rarely get carried away by fantasies and ideas.</label>
-                    <select id="ques8" class="form-control">
-                        <option selected>Choose...</option>
-                        <option value="1">1(Strongly disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly agree)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="ques9">You think that everyone’s views should be respected regardless of whether they are supported by facts
-                        or not.</label>
-                    <select id="ques9" class="form-control">
-                        <option selected>Choose...</option>
-                        <option value="1">1(Strongly disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly agree)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="ques10">You feel more energetic after spending time with a group of people.</label>
-                    <select id="ques10" class="form-control">
-                        <option selected>Choose...</option>
-                        <option value="1">1(Strongly disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly agree)</option>
-                    </select>
-                </div>
-            </div>
-            <!-- Button trigger modal -->
-            <button type="submit" id="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                Launch demo modal
-            </button>
-        </form>
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
